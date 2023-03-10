@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -65,6 +67,25 @@ public class CustomList extends ArrayAdapter<City> {
 
     public void deleteCity(City city){
         cities.remove(city);
+    }
+
+    public boolean hasCity(City city){
+        if (!cities.contains(city)){
+            return false;
+        }
+        return true;
+    }
+
+
+    public int countCities(City city){
+        return cities.size();
+    }
+
+
+    public List< City > getCities(){
+        List < City > listCity = cities;
+//        Collections.sort(listCity);
+        return listCity;
     }
 
 }
