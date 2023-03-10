@@ -82,10 +82,10 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
 
-    public List< City > getCities(){
-        List < City > listCity = cities;
-//        Collections.sort(listCity);
-        return listCity;
-    }
+//    public List< City > getCities(){
+//        List < City > listCity = cities;
+////        Collections.sort(listCity);
+//        return listCity;
+//    }
 
 }
